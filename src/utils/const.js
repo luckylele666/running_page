@@ -11,29 +11,25 @@ const MUNICIPALITY_CITIES_ARR = [
 ];
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = true;
+const IS_CHINESE = false;
 const CHINESE_INFO_MESSAGE = (yearLength, year) =>
-  `我用 App 记录自己跑步 ${yearLength} 年了，下面列表展示的是 ${year} 的数据`;
+  `我用 App 记录自己骑行 ${yearLength} 年了，下面列表展示的是 ${year} 的数据`;
 const ENGLISH_INFO_MESSAGE = (yearLength, year) =>
-  `Running Journey with ${yearLength} Years, the table shows year ${year} data`;
+  `Cycling Journey with ${yearLength} Years, the table shows year ${year} data`;
 
 const INFO_MESSAGE = IS_CHINESE ? CHINESE_INFO_MESSAGE : ENGLISH_INFO_MESSAGE;
-const FULL_MARATHON_RUN_TITLE = IS_CHINESE ? '全程马拉松' : 'Full Marathon';
-const HALF_MARATHON_RUN_TITLE = IS_CHINESE ? '半程马拉松' : 'Half Marathon';
-const MORNING_RUN_TITLE = IS_CHINESE ? '清晨跑步' : 'Morning Run';
-const LUNCH_RUN_TITLE = IS_CHINESE ? '上午跑步' : 'Lunch Run';
-const AFTERNOON_RUN_TITLE = IS_CHINESE ? '午后跑步' : 'Afternoon Run';
-const EVENING_RUN_TITLE = IS_CHINESE ? '傍晚跑步' : 'Evening Run';
-const NIGHT_RUN_TITLE = IS_CHINESE ? '夜晚跑步' : 'Night Run';
+const MORNING_RIDE_TITLE = IS_CHINESE ? '清晨骑行' : 'Morning Ride';
+const LUNCH_RIDE_TITLE = IS_CHINESE ? '上午骑行' : 'Lunch Ride';
+const AFTERNOON_RIDE_TITLE = IS_CHINESE ? '午后骑行' : 'Afternoon Ride';
+const EVENING_RIDE_TITLE = IS_CHINESE ? '傍晚骑行' : 'Evening Ride';
+const NIGHT_RIDE_TITLE = IS_CHINESE ? '夜晚骑行' : 'Night Ride';
 
 const RUN_TITLES = {
-  FULL_MARATHON_RUN_TITLE,
-  HALF_MARATHON_RUN_TITLE,
-  MORNING_RUN_TITLE,
-  LUNCH_RUN_TITLE,
-  AFTERNOON_RUN_TITLE,
-  EVENING_RUN_TITLE,
-  NIGHT_RUN_TITLE,
+  MORNING_RIDE_TITLE,
+  LUNCH_RIDE_TITLE,
+  AFTERNOON_RIDE_TITLE,
+  EVENING_RIDE_TITLE,
+  NIGHT_RIDE_TITLE,
 };
 
 export {
